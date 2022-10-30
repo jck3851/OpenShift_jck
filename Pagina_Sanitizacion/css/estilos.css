@@ -1,0 +1,503 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-size: 16px;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* ----- ----- HEADER ----- ----- */
+
+header{
+	width: 100%;
+	background: url('../img/bg.png'), #281a0c;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center 0;
+}
+
+header .box {
+	width: 100%;
+	height: 130px;
+	background: #fff;
+	opacity: 70%;
+	position: absolute;
+
+}
+
+
+header img{
+	margin: 10px 0 0 40px;
+	width: 90px;
+	position: absolute;
+}
+
+header .contenedor {
+	position: relative;
+	height: 700px;
+}
+
+
+
+
+header .menu {
+	width: 100%;
+	text-align:center;
+	padding-left: 350px;
+}
+
+header .menu a {
+	color: #394048;
+	font-size: 20px;
+	font-weight: 500;
+	display: inline-block;
+	margin: 40px 20px;
+	text-decoration: none;
+	position: relative;
+}
+
+header .menu a:hover {
+	text-decoration: underline;
+}
+
+header .textos {
+	width: 100%;
+	color: #9B1D27;
+	position: absolute;
+	top: 50%;
+	margin-top: -52px;
+	background: rgba(255,255,255,.9);
+}
+
+header .textos .nombre {
+	font-size: 70px;
+	font-weight: 800;
+}
+
+header .textos .nombre span {
+	font-weight: 300;
+}
+
+header .textos h3 {
+	font-weight: 500;
+	font-size: 40px;
+	font-style: italic;
+}
+
+/* ----- ----- MAIN ----- ----- */
+.main {
+	background: url('../img/bg-textura.png');
+	background-repeat: repeat;
+}
+
+.main .acerca-de .contenedor {
+	overflow: visible;
+	position: relative;
+}
+
+.main .acerca-de .foto{
+	width: 80%;
+	position: absolute;
+	left: 0;
+	top:-50px;
+	z-index: 0;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+}
+
+.main .acerca-de .foto img {
+	width: 100%;
+	vertical-align:top;
+}
+
+.main .acerca-de article {
+	background: #fff;
+	padding: 40px;
+	width: 50%;
+	position: relative;
+	float: right;
+	/*top: 30px;*/
+	top: 500px; /*Con Parallax*/
+	z-index: 1;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+}
+
+.main .acerca-de article h3 {
+	font-size: 50px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.main .acerca-de article p {
+	line-height: 28px;
+	margin-bottom: 15px;
+
+}
+
+.main .razones {
+	padding-top: 570px;
+	margin-bottom: 50px;
+}
+
+.main .razones .titulo {
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 40px;
+	color: #9B1D27;
+}
+
+.main .razones .contenedor-1 {
+	border: 1px solid #000;
+	background:transparent;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.main .razones .texto-razones{
+	font-size: 24px;
+}
+
+
+
+
+.main .razones .contenedor-2 {
+	border: 1px solid #000;
+	background:transparent;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.main .razones .contenedor-trabajos {
+    display: flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+.main .razones .contenedor-trabajos .trabajo {
+    width: 23%;
+    margin-bottom: 40px; }
+
+.main .razones .contenedor-trabajos .trabajo .thumb {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+.main .razones .contenedor-trabajos .trabajo .icon_rojo {
+    color: #9B1D27;
+}
+
+.main .razones .contenedor-trabajos .trabajo .icon_gris {
+    color: #394048;
+}
+
+
+
+
+
+.main .razones .contenedor-trabajos .trabajo .descripcion {
+    text-align: center; }
+
+.main .razones .contenedor-trabajos .trabajo .descripcion .nombre {
+    font-weight: 700;
+    color: #394048;
+    margin-bottom: 10px; }
+
+.main .razones .contenedor-trabajos .trabajo .descripcion .categoria {
+    font-size: 14px;
+    color: #636363; }
+
+
+
+
+
+
+.main .galeria {
+	overflow: hidden;
+}
+
+.main .galeria .titulo {
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 40px;
+	color: #9B1D27;
+}
+.main .galeria .foto {
+	width: 33%;
+	float: left;
+	border: none;
+}
+
+.main .galeria .foto img {
+	vertical-align: top;
+	width: 100%;
+	opacity: .7;
+}
+
+.main .galeria .foto img:hover {
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+
+.main .galeria .contenedor .foto .descripcion {
+    text-align: center; }
+
+.main .galeria .contenedor .foto .descripcion .nombre {
+	font-size: 24px;
+    color: #394048;
+    margin-bottom: 10px; 
+
+}
+
+
+
+
+.main .ubicacion {
+	background: #fff;
+	padding: 60px 0;
+}
+
+.main .ubicacion .titulo {
+	text-align: center;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.main .ubicacion .direccion {
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+.main .ubicacion .horarios {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.main .ubicacion .direccion .calle {
+	margin-bottom: 15px;
+}
+
+.main .ubicacion .horarios {
+	overflow: hidden;
+}
+
+.main .ubicacion .horarios h4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.main .mapa {
+	width: 100%;
+	overflow: hidden;
+}
+
+.main .mapa iframe {
+	width: 100%;
+	max-height: 600px;
+}
+
+/* ----- ----- FOOTER ----- ----- */
+
+footer .contacto {
+  padding: 60px 0; }
+
+ footer .contacto .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 60px;
+    font-weight: 500;
+    color: #9B1D27;;
+    text-align: center; }
+
+footer .contacto .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+      border: 2px solid #cecece;
+      border-radius: 5px;
+      padding: 15px 20px;
+      font-size: 16px;
+      color: #a4a4a4; }
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"] {
+      width: 33%;
+      margin-bottom: 15px; }
+
+footer .contacto .formulario textarea {
+      width: 100%;
+      height: 100px;
+      min-width: 100%;
+      margin-bottom: 15px;
+      min-height: 100px;
+      max-height: 300px; }
+
+footer .contacto .formulario .boton {
+      margin: auto;
+      background: #9B1D27;;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 15px 40px; }
+
+footer .contacto .formulario .boton:hover {
+        background: #387bea; }
+
+footer .redes-sociales {
+  background: #1e2b38;
+  padding: 60px 0; }
+
+
+
+footer {
+	background: #000;
+}
+
+footer .copyright {
+	text-align: center;
+	padding: 15px 0;
+	color: #fff;
+}
+
+footer .copyright .facebook:hover {
+      color: #fff; }
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+@media screen and (max-width: 800px) {
+	header img{
+	margin: 10px 0 0 40px;
+	width: 50px;
+	position: absolute;
+	}
+
+	header .contenedor {
+		position: static;
+		height: auto;
+	}
+
+	header .textos {
+		position: static;
+		margin: 100px 0;
+	}
+
+	header .menu {
+		padding-left: 0px;
+		text-align: center;
+	}
+	
+	header .menu a {
+		font-size: 14px;
+		margin: 0px 0px;
+	}
+
+	header .textos .nombre {
+		font-size: 30px;
+	}
+
+	header .textos h3 {
+		font-size: 18px;
+	}
+
+	.main .acerca-de .foto {
+		position: relative;
+		width: 100%;
+	}
+
+	.main .acerca-de article {
+		position: relative;
+		width: 100%;
+		top:-50px;
+		transform: translate(0px, 0);
+	}
+
+	.main .razones .contenedor-trabajos .trabajo {
+    width: 46%; }
+
+	.main .menu {
+		padding-top: 300px;
+	}
+
+	.main .menu article {
+		width: 100%;
+	}
+
+	.main .galeria .foto {
+		width: 50%;
+	}
+
+	.main .mapa {
+		width: 80%;
+		margin: auto;
+	}
+
+	footer .contacto .formulario input[type="text"],
+	footer .contacto .formulario input[type="email"] {
+      width: 100%;
+ }
+}
+
+@media screen and (max-width: 400px) {
+	.main .acerca-de article h3 {
+		font-size: 34px;
+		margin-bottom: 10px;
+	}
+
+	.main .menu article .nombre,
+	.main .menu article .precio {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	.main .ubicacion .direccion,
+	.main .ubicacion .horarios {
+		width: 100%;
+		text-align: center;
+	}
+
+	.main .ubicacion .direccion {
+		margin-bottom: 20px;
+	}
+
+	.main .galeria .foto {
+		width: 100%;
+	}
+
+	.main .ubicacion .horarios .entre-semana,
+	.main .ubicacion .horarios .fin-semana {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
